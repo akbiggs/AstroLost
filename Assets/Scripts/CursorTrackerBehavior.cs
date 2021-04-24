@@ -10,7 +10,7 @@ public class CursorTrackerBehavior : MonoBehaviour
 
     public GameObject trackedObject;
 
-    public float easing = 1;
+    public float easing = 0.5f;
 
     void Start()
     {
@@ -22,16 +22,16 @@ public class CursorTrackerBehavior : MonoBehaviour
     void Update()
     {
         float deltaTime = Time.deltaTime;
-        Vector3 targetOrientation = normalizeTo180(trackedTransform.rotation.eulerAngles);
-        Vector3 currentOrientation = normalizeTo180(myTransform.rotation.eulerAngles);
+        Vector3 targetRotation = normalizeTo180(trackedTransform.rotation.eulerAngles);
+        Vector3 currentRotation = normalizeTo180(myTransform.rotation.eulerAngles);
 
-        Vector3 orientationDelta = targetOrientation - currentOrientation;
-        float orientationDeltaMag = orientationDelta.magnitude;
-        float proposedDeltaMag = Mathf.Min(orientationDeltaMag, easing * deltaTime);
-        float proposedDeltaMagScale = proposedDeltaMag < orientationDeltaMag ? proposedDeltaMag / orientationDeltaMag : 1;
-        Vector3 proposedOrientation = proposedDeltaMagScale < 1 ? (currentOrientation + orientationDelta * proposedDeltaMagScale) : targetOrientation;
+        Vector3 rotationDelta = targetRotation - currentRotation;
 
-        myTransform.rotation = Quaternion.Euler(proposedOrientation);
+        Vector3 proposedRotationDelta = (rotationDelta / (easing / deltaTime));
+
+        Vector3 proposedRotation = currentRotation + proposedRotationDelta;
+     
+        myTransform.rotation = Quaternion.Euler(proposedRotation);
 
         myTransform.localPosition = trackedTransform.localPosition;
     }
