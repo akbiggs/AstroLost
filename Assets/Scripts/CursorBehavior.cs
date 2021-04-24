@@ -26,7 +26,7 @@ public class CursorBehavior : MonoBehaviour
     {
         Vector2 mouseOffset = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         
-        Vector2 inversionFactor = new Vector2(invertMouseX ? -1 : 1, invertMouseY ? -1 : 1);
+        Vector2 inversionFactor = new Vector2(invertMouseX ? 1 : -1, invertMouseY ? 1 : -1);
 
         // mouse x = axis y & mouse y = axis x, so reverse the mouse offset vector
 
