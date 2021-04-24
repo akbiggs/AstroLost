@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /** Track the rotation of another game object and ease this object's rotation to match. */
-public class CursorTrackerBehavior : MonoBehaviour
+public class OrientationTrackerBehavior : MonoBehaviour
 {
     private Transform myTransform;
     private Transform trackedTransform;
