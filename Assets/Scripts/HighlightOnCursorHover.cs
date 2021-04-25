@@ -5,6 +5,7 @@ using UnityEngine;
 public class HighlightOnCursorHover : MonoBehaviour
 {
     public GameObject baseSelectionOnOrientationOf;
+    public Color highlightedColor;
 
     private Material myMaterial;
     private Color originalColor;
@@ -21,6 +22,6 @@ public class HighlightOnCursorHover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        myMaterial.color = isSelectedComputer.isHighlighted() ? Color.green : originalColor;
+        myMaterial.color = isSelectedComputer.isHighlighted() ? highlightedColor : originalColor;
     }
 }
