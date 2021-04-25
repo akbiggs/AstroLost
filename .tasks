@@ -5,13 +5,13 @@
 bd58nroxy1hc;complete;Add left button;
 bfbmi67ldwxs;complete;Add ship controls;
 c49x51bmxlhc;complete;Add player cursor;
-guzgqzbldp1c;open;Move astroids towards ship;
+guzgqzbldp1c;complete;Move astroids towards ship;
 hkcfhenh435s;complete;Create Alex scene;
 i8nuuycd6eio;complete;Add camera cursor tracking;
 l8h12w629zi8;complete;Create player ship;
 nrvt6urozgu8;complete;Figure out how to ray cast the cursor;
 phxxi3r8ark0;complete;Create astroid model;
-sg9i2btgldkw;started;Create asteroid object;
+sg9i2btgldkw;complete;Create asteroid object;
 t92iwzjectts;complete;Add right button;
 # dependencies
 3tmmstf7cuww;guzgqzbldp1c,l8h12w629zi8;
