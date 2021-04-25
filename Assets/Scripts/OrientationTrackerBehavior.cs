@@ -30,7 +30,7 @@ public class OrientationTrackerBehavior : MonoBehaviour
         Vector3 proposedRotationDelta = (rotationDelta / (easing / deltaTime));
 
         Vector3 proposedRotation = currentRotation + proposedRotationDelta;
-     
+        
         myTransform.rotation = Quaternion.Euler(proposedRotation);
 
         myTransform.localPosition = trackedTransform.localPosition;
