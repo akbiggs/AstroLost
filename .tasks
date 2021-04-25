@@ -2,18 +2,23 @@
 # tasks
 2s0b56vleqio;complete;Create Dan scene;
 3tmmstf7cuww;open;Build collision event;
+bd58nroxy1hc;open;Add left button;
 bfbmi67ldwxs;started;Add ship controls;
 c49x51bmxlhc;complete;Add player cursor;
 guzgqzbldp1c;open;Move astroids towards ship;
 hkcfhenh435s;complete;Create Alex scene;
 i8nuuycd6eio;complete;Add camera cursor tracking;
 l8h12w629zi8;complete;Create player ship;
+nrvt6urozgu8;complete;Figure out how to ray cast the cursor;
 phxxi3r8ark0;complete;Create astroid model;
 sg9i2btgldkw;started;Create asteroid object;
+t92iwzjectts;open;Add right button;
 # dependencies
 3tmmstf7cuww;guzgqzbldp1c,l8h12w629zi8;
-bfbmi67ldwxs;l8h12w629zi8;
+bd58nroxy1hc;bfbmi67ldwxs;
+bfbmi67ldwxs;l8h12w629zi8,nrvt6urozgu8;
 c49x51bmxlhc;l8h12w629zi8;
 guzgqzbldp1c;sg9i2btgldkw;
 i8nuuycd6eio;c49x51bmxlhc;
 phxxi3r8ark0;sg9i2btgldkw;
+t92iwzjectts;bfbmi67ldwxs;
