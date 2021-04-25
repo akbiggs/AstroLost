@@ -183,7 +183,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 223509839}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 523efddb814962e4db31b85b123ec993, type: 3}
+  m_Script: {fileID: 11500000, guid: aea2e59620a5cfe49948cac6847a38e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   movementForce: 20
@@ -755,10 +755,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1932665488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b00f896cbc7f487489715528b05d6fff, type: 3}
+  m_Script: {fileID: 11500000, guid: 302f188b810d11048849f7222bde28ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayEmitter: {fileID: 1112272128}
+  baseSelectionOnOrientationOf: {fileID: 1112272128}
 --- !u!54 &1932665491
 Rigidbody:
   m_ObjectHideFlags: 0
